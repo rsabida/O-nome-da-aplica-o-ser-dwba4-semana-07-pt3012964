@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>IFSP - Biblioteca</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header img {
+      width: 250px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .event img {
+      width: 200px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .event-caption {
+      font-size: 14px;
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    .menu {
+      background-color: #333;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .menu a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .menu a:hover {
+      background-color: #8b0000;
+    }
+
+    .submenu {
+      position: relative;
+    }
+
+    .submenu-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      z-index: 1;
+    }
+
+    .submenu-content a {
+      color: red;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .submenu-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .submenu:hover .submenu-content {
+      display: block;
+    }
+
+    .logo {
+      background-color: #00923f;
+      padding: 20px;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .facebook-link img {
+      vertical-align: middle;
+      height: 20px;
+    }
+
+    .media-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+
+    .media-item {
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .media-item img {
+      width: 100%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <div class="menu">
+    <a href="index.html">HOME</a>
+    <a href="eventos.html">EVENTOS</a>
+    <a href="contato.html">CONTATO</a>
+    <div class="submenu">
+      <a href="#">CURSOS</a>
+      <div class="submenu-content">
+        <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
+        <a href="eng.html">Engenharia de Produção</a>
+      </div>
+    </div>
+    <a href="entrar.html">ENTRAR</a>
+    <a href="sobre.html">SOBRE</a>
+  </div>
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/refs/heads/master/Logo.jpg" alt="Instituto Federal São Paulo">
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="section-title">Acontece no IFSP</div>
+  <div class="media-container">
+    <div class="media-item">
+      <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/refs/heads/master/SEJA_RARO.jpg" alt="Palestra Seja Raro">
+      <div class="event-caption">Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</div>
+    </div>
+    <div class="media-item">
+      <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/refs/heads/master/SEJA_RARO.jpg" alt="Eventos IFSP">
+      <div class="event-caption">
+        <strong>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</strong><br>
+        Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus
+        <br><br>
+        <strong>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</strong><br>
+        Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
+    <p>
+      <a class="facebook-link" href="https://www.facebook.com/ifsppirituba" target="_blank">
+        <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/refs/heads/master/facebook.png" alt="Facebook"> Visite nossa página no Facebook
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
